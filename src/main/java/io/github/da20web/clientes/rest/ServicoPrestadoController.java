@@ -28,7 +28,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/servicos-prestados")
 @RequiredArgsConstructor /* Evita a criação de construtor dentro da classe */
-@CrossOrigin(origins = "*")
+@CrossOrigin("*")
 public class ServicoPrestadoController {
 	
 	private final ClienteRepository clienteRepository;

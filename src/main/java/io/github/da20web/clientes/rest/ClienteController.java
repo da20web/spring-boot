@@ -23,7 +23,7 @@ import io.github.da20web.clientes.repository.ClienteRepository;
 
 @RestController
 @RequestMapping("/api/clientes")
-@CrossOrigin(origins = "*")
+@CrossOrigin("*")
 public class ClienteController {
 
 	private final ClienteRepository repository;
