@@ -11,12 +11,12 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-/*@Configuration*/
+@Configuration
 public class WebConfig {
 	
 	@Bean
 	public FilterRegistrationBean<CorsFilter> corsFilterRegistrationBean() {
-		List<String> all = Arrays.asList("*");
+		List<String> all = Arrays.asList("*"); 
 		
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowedOrigins(all);
